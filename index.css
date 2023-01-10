@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
+    background-color: rgb(252, 101, 74);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #d7d292;
+    margin-bottom: 4px;
+}
+
+button {
+    
+    background: #6abafb;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #d7d292;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .2s ease-out; 
+
+    transform: translate(0, 0); 
+    transition: transform 0.2s ease-out;
+}
+
+
+
+.Dbtn{
+    transform: translate(0, 0); 
+    transition: transform 0.2s ease-out;
+    
+    display: inline-block;
+    background: #f9f9f9;
+    color: rgb(252, 101, 74);
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.Dbtn::after,
+.Dbtn::before {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.7;
+    transition: all 400ms;
+    top: 0;
+}
+
+.Dbtn:hover::after {
+    top: -36px;
+}
+
+.Dbtn::before {
+    content: "Delete All";
+    top: 30px;
+}
+
+.Dbtn:hover::before {
+    top: 0;
+    
+}
+
+.Dbtn:hover{
+    background-color: rgb(252, 101, 74);
+    border: 1px solid #d7d292;
+}
+
+.Dbtn:active {
+    background-color: rgb(252, 101, 74);
+    transform: translate(2px, 2px); 
+    transform: scale(0.95); 
+  }
+
+.STbtn:hover {
+    background-color: rgb(241, 124, 103);
+    border: 1px solid #d7d292;
+  }
+  
+  .STbtn:active {
+    background-color: #5da1d9;
+
+    transform: translate(2px, 2px); 
+    transform: scale(0.95); 
+  }
+
+
+ul{
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+li {
+    margin-top: 5px;
+    
+}
+
+a {
+
+    color:yellow;
+    text-decoration: none;
+    border-bottom: 1px solid #5da1d9;
+    
+}
+ 
